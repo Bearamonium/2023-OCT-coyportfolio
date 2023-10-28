@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  background-color: #A5A5A5;
+}
+
+header {
+  background-color: #FFFFBB;
+  padding: 16px;
+  text-align: center;
+}
+header .logo-name {
+  margin-bottom: 32px;
+}
+header .logo-name img {
+  width: 100px;
+  height: 100px;
+}
+header .logo-name .name {
+  font-size: 32px;
+}
+header .logo-name .name .feather-text {
+  color: rgb(141, 34, 228);
+}
+header .logo-name .name .consulting-text {
+  color: rgb(161, 102, 209);
+}
+header #nav-items {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+header #nav-items a {
+  text-decoration: none;
+  color: #FFAA10;
+}/*# sourceMappingURL=index.css.map */

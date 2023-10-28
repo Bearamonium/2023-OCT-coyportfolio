@@ -1,0 +1,45 @@
+$primary-colour: #FFFFBB;
+$secondary-colour: #A5A5A5;
+
+body {
+    margin: 0;
+    background-color: $secondary-colour;
+}
+
+header {
+    background-color: $primary-colour;
+    padding: 16px;
+    // common to use multiples of 4 - 4, 8, 12, 16 etc
+    text-align: center;
+
+    .logo-name {
+        margin-bottom: 32px;
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .name {
+            font-size: 32px;
+            
+            .feather-text {
+                color: rgb(141, 34, 228);
+            }
+
+            .consulting-text {
+                color: rgb(161, 102, 209);
+            }
+        }
+    }
+
+    #nav-items {
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+        a {
+            text-decoration: none;
+            color: #FFAA10;
+        }
+    }
+}
