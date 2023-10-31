@@ -1,0 +1,58 @@
+@import "../defaults/colors";
+@import "../defaults/breakpoints";
+@import "../components/utils";
+
+header {
+    @include background-stuff();
+
+    .logo-name {
+        @media screen and (max-width: $medium) { 
+            margin-bottom: 48px; 
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .name {
+            font-size: 32px;
+            
+            .feather-text {
+                color: rgb(141, 34, 228);
+            }
+
+            .consulting-text {
+                color: rgb(161, 102, 209);
+            }
+        }
+    }
+
+    #nav-items {
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+        a {
+            text-decoration: none;
+            color: #FFAA10;
+        }
+    }
+}
+
+@media screen and (min-width: $medium) { 
+    header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .logo-name {
+
+            .name {
+                margin-bottom: 0; 
+            }
+        }
+        #nav-items {
+            width: 50vh; 
+        }
+    }
+}

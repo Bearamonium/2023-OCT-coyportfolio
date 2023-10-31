@@ -1,0 +1,14 @@
+@import "./styles/defaults/colors";
+@import "./styles/defaults/breakpoints";
+@import "./styles/components/footer";
+@import "./styles/components/header";
+
+body {
+    margin: 0;
+    background-color: $secondary-colour;
+
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
