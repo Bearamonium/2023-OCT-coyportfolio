@@ -8,7 +8,9 @@ This site is currently under development - we will keep on adding these features
 
 ### Header
 Header is the component at the top of the website. It contants logo, name and navigation bar. Here is the code for the header we have:
+
 ```html
+
 <header>
         <div class="logo-name">
             <a href="index.html">
@@ -27,3 +29,28 @@ Header is the component at the top of the website. It contants logo, name and na
         </nav>
     </header>
 ```
+
+### Footer
+Footer has social media links, and some contact and address information. 
+Here is the code that we have for the footer: 
+
+```html
+<footer>
+    <div class="social-media">
+        <a href="http://www.facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="http://www.github.com" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="http://www.linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+    </div>
+    <div class="info">
+        <p>Contact: 0404040404</p>
+        <p>42 Wallaby Way, Sydney Australia</p>
+    </div>
+</footer>
+```
+

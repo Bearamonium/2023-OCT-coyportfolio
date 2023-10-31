@@ -1,19 +1,29 @@
 $primary-colour: #FFFFBB;
 $secondary-colour: #A5A5A5;
 
+@mixin background-stuff() {
+    background-color: $primary-colour;
+    padding: 16px;
+    text-align: center;
+}
+
 body {
     margin: 0;
     background-color: $secondary-colour;
+
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
-    background-color: $primary-colour;
-    padding: 16px;
-    // common to use multiples of 4 - 4, 8, 12, 16 etc
-    text-align: center;
+    @include background-stuff();
 
     .logo-name {
-        margin-bottom: 32px;
+        @media screen and (max-width: 600px) {
+            margin-bottom: 48px; 
+        }
 
         img {
             width: 100px;
@@ -41,5 +51,54 @@ header {
             text-decoration: none;
             color: #FFAA10;
         }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .logo-name {
+
+            .name {
+                margin-bottom: 0; 
+            }
+        }
+        #nav-items {
+            width: 50vh; 
+        }
+    }
+}
+
+footer {
+    @include background-stuff();
+    .social-media {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 32px;
+
+        a {
+            i {
+                color: rgb(141, 34, 228);
+                font-size: 3vh;
+            }
+        }
+        .info {
+            color: rgb(161, 102, 209);
+        }
+    }
+}
+
+.info {
+    color: rgb(161, 102, 209);
+}
+
+@media screen and (min-width: 600px) {
+    .social-media {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto; 
     }
 }
