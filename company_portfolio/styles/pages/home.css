@@ -1,0 +1,83 @@
+footer {
+  background-color: #FFFFb6;
+  padding: 16px;
+  text-align: center;
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 32px;
+}
+footer .social-media a i {
+  color: rgb(141, 34, 228);
+  font-size: 3vh;
+}
+footer .social-media .info {
+  color: rgb(161, 102, 209);
+}
+
+.info {
+  color: rgb(161, 102, 209);
+}
+
+@media screen and (min-width: 600px) {
+  .social-media {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+header {
+  background-color: #FFFFb6;
+  padding: 16px;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  header .logo-name {
+    margin-bottom: 48px;
+  }
+}
+header .logo-name img {
+  width: 100px;
+  height: 100px;
+}
+header .logo-name .name {
+  font-size: 32px;
+}
+header .logo-name .name .feather-text {
+  color: rgb(141, 34, 228);
+}
+header .logo-name .name .consulting-text {
+  color: rgb(161, 102, 209);
+}
+header #nav-items {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+header #nav-items a {
+  text-decoration: none;
+  color: #FFAA10;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  header .logo-name .name {
+    margin-bottom: 0;
+  }
+  header #nav-items {
+    width: 50vh;
+  }
+}
+body {
+  margin: 0;
+  background-color: #A5A5A5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}/*# sourceMappingURL=home.css.map */
